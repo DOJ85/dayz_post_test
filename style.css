@@ -14,6 +14,8 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+
+
 .illustration img {
   border: 2px solid black;
   border-radius: 3px;
@@ -23,6 +25,14 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
   margin-left: 40px;
   margin-right: 40px;
+
+
+  transform: scale(1);
+  transition: transform 2s,opacity 2s;
+}
+.illustration img:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 
@@ -40,7 +50,8 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
 }
 .description p {
-  word-spacing: 10px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
 }
 hr {
    margin-left:-200vh;
