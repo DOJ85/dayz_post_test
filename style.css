@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 .post1 {
   margin-top: 60px;
   margin-bottom: 20px;
+
 }
 
 .illustration img {
@@ -31,12 +32,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 35px;
 }
 
-.title1, .desription {
+.title1, .description {
   margin-left: 20px;
   vertical-align: baseline;
 }
 .sec {
   float: left;
+}
+.description p {
+  word-spacing: 10px;
 }
 hr {
    margin-left:-200vh;
