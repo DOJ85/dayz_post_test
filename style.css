@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 3px;
   box-shadow: 0 0 25px black;
   padding: 0;
-  height: 25vh;
+  height: 17em; /* probleme de shrink hauteur ou largeur (25vh)*/
   width: auto;
   margin-left: 40px;
   margin-right: 40px;
