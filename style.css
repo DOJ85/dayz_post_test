@@ -14,25 +14,43 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 /* l'image doit etre zoomé de base, puis dezoom et épouse le border */
-.illustration img {
+img {
+width: 100%;
+min-width: 100%;
+height: 100%;
+transition: all 2s;
+transform: scale(1.65);
+transition: transform 2s,opacity 2s;
+}
+.illustration {
   border: 2px solid black;
   border-radius: 3px;
   box-shadow: 0 0 25px black;
+  height: 14em;
+  width: 30%;
   padding: 0;
-  height: 17em; /* probleme de shrink hauteur ou largeur (25vh)*/
+  overflow: hidden;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  padding: 0;
+  max-height: 17em; /* probleme de shrink hauteur ou largeur (25vh)*/
   width: auto;
   margin-left: 40px;
   margin-right: 40px;
+transition: all 2s;
+
+
 }
-img {
-  transform: scale(1);
+.illustration:hover {
+  transform: scale(1.14);
   transition: transform 2s,opacity 2s;
-    overflow: hidden;
-    transition: all 2s;
-
+  overflow: hidden;
+  transition: all 2s;
 }
 
-img:hover {
+
+.illustration img:hover {
   opacity: 1;
   transform: scale(1.1);
   overflow: hidden;
@@ -60,8 +78,8 @@ img:hover {
   word-wrap: break-word;
 }
 hr {
-   margin-left:-200vh;
-    margin-right:-200vh;
+  margin-left:-200vh;
+  margin-right:-200vh;
 }
 body {
   overflow-x: hidden;
