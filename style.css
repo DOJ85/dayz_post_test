@@ -20,10 +20,11 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid black;
   border-radius: 2px;
   box-shadow: 0 0 10px #5b5b5b, 0 0 20px black;
-  height: 17em;
-  width: 30%;
 
+  height: 25vh;
+  width: 100%;
   max-width: 100%;
+
   padding: 0;
   overflow: hidden;
   margin-left: 40px;
@@ -44,22 +45,22 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: all 2s;
   -webkit-transition: all 2s;
   box-shadow: 0 0 60px black;
-
 }
 .illustration img {
   height: 100%;
+  width: 100%;
   transition: all 2s;
   -moz-transition: all 2s;
   -o-transition: all 2s;
   -webkit-transition: all 2s;
-  transform: scale(1.65);
+  transform: scale(1.36);
   opacity: .8s;
   transition: transform 2s,opacity 2s;
 }
 
 .illustration img:hover {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.0);
   overflow: hidden;
 
   transition: all 2s;
@@ -77,17 +78,19 @@ h1, h2, h3, h4, h5, h6 {
 
   .illustration {
     height: 100%;
-    width: 70%;
+    width: 75%;
   }
   .illustration:hover {
-
+  margin-bottom: 15px;
   }
   .illustration img {
   width: 100%;
-  height: 100%
+  height: 100%;
+
   }
   .illustration img:hover {
-
+    width: 100%;
+    height: 100%;
   }
   .sec {
     float: left;
