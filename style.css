@@ -2,126 +2,27 @@
   margin: 0;
   padding: 0;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-.post1 {
-  margin-top: 60px;
-  margin-bottom: 20px;
-
-}
-
-
-
-
-/* NAVIGATEUR taille normal */
-.illustration {
-  border: 2px solid black;
-  border-radius: 2px;
-  box-shadow: 0 0 10px #5b5b5b, 0 0 20px black;
-  height: 17em;
-  max-width: 100%;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-  width: auto;
-  margin-left: 40px;
-  margin-right: 40px;
-  transition: all 2s;
-}
-.illustration:hover {
-  transform: scale(1.1);
-  transition: transform 2s,opacity 2s;
-  overflow: hidden;
-  transition: all 2s;
-  -moz-transition: all 2s;
-  -o-transition: all 2s;
-  -webkit-transition: all 2s;
-  box-shadow: 0 0 50px black;
-}
-.illustration img {
-  height: 100%;
-  width: auto;
-  transition: all 2s;
-  -moz-transition: all 2s;
-  -o-transition: all 2s;
-  -webkit-transition: all 2s;
-  transform: scale(1.36);
-  opacity: .8s;
-  transition: transform 2s,opacity 2s;
-}
-
-.illustration img:hover {
-  opacity: 1;
-  transform: scale(1.0);
-  overflow: hidden;
-
-  transition: all 2s;
-  -moz-transition: all 2s;
-  -o-transition: all 2s;
-  -webkit-transition: all 2s;
-}
-/* NAVIGATEUR taille normal */
-
-
-/* RESPONSIVE */
-@media (max-width: 991px) {
-
-  .sec {
-    float: left;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
-  .illustration {
-    height: 100%;
-    width: 75%;
-  }
-  .illustration:hover {
-  margin-bottom: 15px;
-  }
-
-  .illustration img {
-  width: 100%;
-  height: 100%;
-  }
-  .illustration img:hover {
-    width: 100%;
-    height: 100%;
-  }
-}
-/* RESPONSIVE */
-
-
-
-
-
-.title1 {
-  margin-top: 10px;
-  margin-bottom: 35px;
-}
-
-.title1, .description {
-  margin-left: 20px;
-  vertical-align: baseline;
-}
-.sec {
-  float: left;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-.description p {
-  word-spacing: 2px;
-  letter-spacing: 1px;
-  word-wrap: break-word;
-}
-hr {
-  margin-left:-200vh;
-  margin-right:-200vh;
-}
 body {
-  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  border: 5px solid black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.post {
+  margin: 60px 0 20px 40px;
+  display: flex;
+  flex-direction: row;
+}
+.post figure {
+  margin-right: 10ch;
+  border: 2px solid red;
+}
+.post figure img {
+  height: 23ch;
+}
+.text {
+
 }
