@@ -16,13 +16,58 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+.centre {
+
+}
+
 .post figure {
   margin-right: 10ch;
   border: 2px solid red;
+  height: 23ch;
+  display: flex;
+
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 0 10px #5b5b5b, 0 0 20px black;
+  background-color: black;
+  transform: scale(1);
+  transition: transform 2s,opacity 2s;
+
+  transition: 2s all;
+  -moz-transition: 2s all;
+  -o-transition: 2s all;
+  -webkit-transition: 2s all;
 }
+.post figure:hover {
+  box-shadow:  0 0 50px black;
+  transform: scale(1.1);
+  transition: transform 2s,opacity 2s;
+  transition: 2s all;
+  -moz-transition: 2s all;
+  -o-transition: 2s all;
+  -webkit-transition: 2s all;
+}
+
 .post figure img {
   height: 23ch;
+  opacity: 0.85;
+  transform: scale(1.36);
+  transition: transform 2s,opacity 2s;
 }
+.post figure img:hover {
+  opacity: 1;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 2s,opacity 2s;
+}
+
+
+
+
+
+
+
 .text {
 
 }
