@@ -13,7 +13,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 
 }
-/* l'image doit etre zoomé de base, puis dezoom et épouse le border */
+
+
+
 
 /* NAVIGATEUR taille normal */
 .illustration {
@@ -21,14 +23,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2px;
   box-shadow: 0 0 10px #5b5b5b, 0 0 20px black;
   height: 17em;
-
   max-width: 100%;
-
   padding: 0;
   overflow: hidden;
-
   background-color: black;
-   /* probleme de shrink hauteur ou largeur (25vh)*/
   width: auto;
   margin-left: 40px;
   margin-right: 40px;
@@ -42,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: all 2s;
   -o-transition: all 2s;
   -webkit-transition: all 2s;
-  box-shadow: 0 0 60px black;
+  box-shadow: 0 0 50px black;
 }
 .illustration img {
   height: 100%;
@@ -66,13 +64,17 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: all 2s;
   -webkit-transition: all 2s;
 }
-
-
-
 /* NAVIGATEUR taille normal */
+
 
 /* RESPONSIVE */
 @media (max-width: 991px) {
+
+  .sec {
+    float: left;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 
   .illustration {
     height: 100%;
@@ -81,19 +83,14 @@ h1, h2, h3, h4, h5, h6 {
   .illustration:hover {
   margin-bottom: 15px;
   }
+
   .illustration img {
   width: 100%;
   height: 100%;
-
   }
   .illustration img:hover {
     width: 100%;
     height: 100%;
-  }
-  .sec {
-    float: left;
-    overflow-x: hidden;
-    overflow-y: hidden;
   }
 }
 /* RESPONSIVE */
