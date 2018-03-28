@@ -19,8 +19,9 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid black;
   border-radius: 3px;
   box-shadow: 0 0 10px #5b5b5b, 0 0 20px black;
-  height: 14em;
+  height: 17em;
   width: 30%;
+
   max-width: 100%;
   padding: 0;
   overflow: hidden;
