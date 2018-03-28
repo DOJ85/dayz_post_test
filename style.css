@@ -15,9 +15,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* l'image doit etre zoomé de base, puis dezoom et épouse le border */
 
+/* NAVIGATEUR taille normal */
 .illustration {
   border: 2px solid black;
-  border-radius: 3px;
+  border-radius: 2px;
   box-shadow: 0 0 10px #5b5b5b, 0 0 20px black;
   height: 17em;
   width: 30%;
@@ -45,7 +46,16 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 60px black;
 
 }
-
+.illustration img {
+  height: 100%;
+  transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transform: scale(1.65);
+  opacity: .8s;
+  transition: transform 2s,opacity 2s;
+}
 
 .illustration img:hover {
   opacity: 1;
@@ -58,16 +68,26 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all 2s;
 }
 
-img {
-  height: 100%;
-  transition: all 2s;
-  -moz-transition: all 2s;
-  -o-transition: all 2s;
-  -webkit-transition: all 2s;
-  transform: scale(1.65);
-  opacity: .8s;
-  transition: transform 2s,opacity 2s;
+
+
+/* NAVIGATEUR taille normal */
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .illustration {
+
+  }
+  .illustration:hover {
+
+  }
+  .illustration img {
+
+  }
+  .illustration img:hover {
+    
+  }
 }
+/* RESPONSIVE */
 
 .title1 {
   margin-top: 10px;
