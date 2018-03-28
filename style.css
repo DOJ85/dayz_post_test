@@ -23,7 +23,7 @@ body {
 
 .post figure {
   margin-right: 10ch;
-  border: 2px solid red;
+  border: 2px solid black;
   height: 23ch;
   display: flex;
 
@@ -68,6 +68,15 @@ body {
 
 
 
-.text {
-
+.titre {
+margin-bottom: 4vh;
+}
+.titre h1 {
+  text-decoration: underline;
+  font-weight: 500;
+}
+.description {
+  max-width: 500px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
 }
