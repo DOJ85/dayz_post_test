@@ -7,13 +7,17 @@ body {
   border: 5px solid black;
 }
 
-
+.align {
+  float: left;
+}
 .post {
   margin: 60px 0 20px 40px;
   display: flex;
   flex-direction: row;
 }
 .container {
+  display: flex;
+  flex-direction: column;
   float: left;
 }
 
@@ -22,7 +26,7 @@ body {
 .post figure {
   margin-right: 10ch;
   border: 2px solid black;
-  height: 23ch;
+  height: 20ch;
   display: flex;
 
   overflow: hidden;
@@ -61,7 +65,10 @@ body {
   transition: transform 2s,opacity 2s;
 }
 
+@media(max-width: 1220px)
+{
 
+}
 
 
 
