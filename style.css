@@ -7,19 +7,17 @@ body {
   border: 5px solid black;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
+
 .post {
   margin: 60px 0 20px 40px;
   display: flex;
   flex-direction: row;
 }
-
-.centre {
-
+.container {
+  float: left;
 }
+
+
 
 .post figure {
   margin-right: 10ch;
@@ -41,7 +39,7 @@ body {
 }
 .post figure:hover {
   box-shadow:  0 0 50px black;
-  transform: scale(1.1);
+  transform: scale(1.06);
   transition: transform 2s,opacity 2s;
   transition: 2s all;
   -moz-transition: 2s all;
@@ -51,6 +49,7 @@ body {
 
 .post figure img {
   height: 23ch;
+  width: 100%;
   opacity: 0.85;
   transform: scale(1.36);
   transition: transform 2s,opacity 2s;
